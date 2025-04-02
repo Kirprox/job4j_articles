@@ -13,9 +13,7 @@ import java.util.Properties;
 public class Application {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(Application.class.getSimpleName());
-
     public static final int TARGET_COUNT = 1_000_000;
-
     public static void main(String[] args) {
         var properties = loadProperties();
         var wordStore = new WordStore(properties);
@@ -36,5 +34,4 @@ public class Application {
         }
         return properties;
     }
-
 }
